@@ -1,0 +1,23 @@
+{
+  "name": "tm-react-native-imgepicker",
+  "version": "1.0.0",
+  "description": "太美自定义图片组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitHub-lrb/tm-react-native-imgepicker.git"
+  },
+  "keywords": [
+    "image",
+    "picker"
+  ],
+  "author": "TM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GitHub-lrb/tm-react-native-imgepicker/issues"
+  },
+  "homepage": "https://github.com/GitHub-lrb/tm-react-native-imgepicker#readme"
+}
