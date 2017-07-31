@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'   // aar目录
+        }
+    }
+}
+
+
+dependencies {
+    compile 'com.facebook.react:react-native:+'
+    compile 'com.yalantis:ucrop:2.2.0-native'
+    compile 'id.zelory:compressor:2.0.0'
+    compile(name: 'AndroidsLib-release', ext: 'aar')
+    compile(name: 'ImageSelctorLib-release', ext: 'aar')
+}
