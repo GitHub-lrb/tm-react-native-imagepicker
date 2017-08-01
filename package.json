@@ -1,6 +1,6 @@
 {
   "name": "tm-react-native-imagepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "太美自定义图片组件",
   "main": "index.js",
   "scripts": {
