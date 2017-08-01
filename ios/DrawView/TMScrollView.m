@@ -33,6 +33,8 @@
         dw.backgroundColor = [UIColor grayColor];
         dw.userInteractionEnabled = YES;
         dw.clipsToBounds = YES;
+        dw.contentMode = UIViewContentModeScaleAspectFit;
+
         [self addSubview:dw];
         
         self.delegate = self;
@@ -55,21 +57,6 @@
 {
     _image = image;
     dw.image = image;
-    if (dw.image.size.width > Screen_width || dw.image.size.height>Screen_height) {
-        CGFloat widthSelf = self.bounds.size.width;
-        CGFloat heightSelf = self.bounds.size.height;
-        CGFloat width = Screen_width;
-        CGFloat height = Screen_height;
-        if (dw.image.size.width >= dw.image.size.height) {
-            height = Screen_width * (dw.image.size.height/dw.image.size.width);
-        }
-        else
-        {
-            width = Screen_height * (dw.image.size.width/dw.image.size.height);
-        }
-        
-        dw.frame = CGRectMake((widthSelf-width)/2, (heightSelf - height)/2, width, height);
-    }
 }
 
 -(void)clear
